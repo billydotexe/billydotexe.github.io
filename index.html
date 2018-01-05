@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <link rel="icon" href="titolo.png" type="image/x-icon" />
+        <title>
+            COMPLIMENTI!
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="cambiacolore()" >
+        <center>
+            <table id="tabella" class="centro" style="border: 5px dashed;" bgcolor="#B2B2B2">
+                <tr>
+                    <td>
+                        <font color="red"><b>SEI STATO SELEZIONATO TRA PI&Ugrave; DI 1500 UTENTI PER PARTECIPARE AL MIO COMPLEANNO!</b></font><br><br><br>
+                        <center>
+                            <form name="dati">
+                                <input name="b_data" type="button" class="bottone" value="quando?" onclick="display('data');"><br><br>
+                                <input name="data" type="text" class="casella" value="1/2/2018" style="display:none" readonly><br>
+                                <input name="b_luogo" type="button" class="bottone" value="dove?" onclick="display('luogo');"><br><br>
+                                <input name="luogo" type="text" class="casella" value="da inserire" style="display:none" readonly><br>
+                                <input name="b_ora" type="button" class="bottone" value="a che ora?" onclick="display('ora');"><br><br>
+                                <input name="ora" type="text" class="casella" value="da inserire" style="display:none" readonly><br>
+                                <input name="nome" type="text" class="casella" placeholder="nome e cognome"><br><br>
+                                <p>verrai?</p>
+                                <input type="button" class="bottone" value="si" onclick="email('si')">
+                                <input type="button" class="bottone" value="no" onclick="email('no')">
+                            </form>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

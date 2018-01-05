@@ -1,0 +1,35 @@
+.bottone{
+    position: relative;
+    cursor: pointer;
+    padding: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow:
+        0px 0px 0px 1px #000000 inset,
+        0px 0px 0px 2px #B3B3B3 inset,
+        0px 4px 0px 0px #010101,
+        0px 5px 0px 0px #101010,
+        0px 5px 0px 0px rgba(0,0,0,.15);
+}
+
+.bottone:active {
+    background-color: #ffffff;
+    box-shadow:
+        0px 0px 0px 1px #000000 inset,
+        0px 0px 0px 2px #B3B3B3 inset,
+        0px 0px 0px 0px #010101,
+        0px 1px 0px 0px #101010,
+        0px 2px 0px 0px rgba(0,0,0,.15);
+    top: 3px;
+}
+
+.casella{
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+}
