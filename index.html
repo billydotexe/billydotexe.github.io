@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
-    <body onload="cambiacolore()" >
+    <body onload="cambiacoloretabella();">
         <center>
             <table id="tabella" class="centro" style="border: 5px dashed;" bgcolor="#B2B2B2">
                 <tr>
@@ -18,17 +18,20 @@
                         <center>
                             <form name="dati">
                                 <input name="b_data" type="button" class="bottone" value="quando?" onclick="display('data');"><br><br>
-                                <input name="data" type="text" class="casella" value="1/2/2018" style="display:none" readonly><br>
+                                <p id="data" class="testo" style="display:none">1/2/2018</p>
                                 <input name="b_luogo" type="button" class="bottone" value="dove?" onclick="display('luogo');"><br><br>
-                                <input name="luogo" type="text" class="casella" value="da inserire" style="display:none" readonly><br>
+                                <a id="maps" href="https://www.google.it/maps/place/Ristorante+Pizzeria+Shalai/@37.9370598,12.5075336,17z/data=!3m1!4b1!4m5!3m4!1s0x131bdede7ced399d:0x6cc58c9b5485f356!8m2!3d37.9370598!4d12.5097223?dcr=0" target="blank">
+                                    <p id="luogo" class="testo" style="display:none">da inserire</p>
+                                </a>
                                 <input name="b_ora" type="button" class="bottone" value="a che ora?" onclick="display('ora');"><br><br>
-                                <input name="ora" type="text" class="casella" value="da inserire" style="display:none" readonly><br>
+                                <p id="ora" class="testo" style="display:none">da inserire</p>
                                 <input name="nome" type="text" class="casella" placeholder="nome e cognome"><br><br>
-                                <p>verrai?</p>
+                                <p id="question" class="testo">verrai?</p>
                                 <input type="button" class="bottone" value="si" onclick="email('si')">
                                 <input type="button" class="bottone" value="no" onclick="email('no')">
                             </form>
                         </center>
+                        <br><br>
                     </td>
                 </tr>
             </table>
