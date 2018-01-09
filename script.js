@@ -12,6 +12,9 @@ function cambiacoloretabella(){
     data.style.color = colore_rgb;
     ora.style.color = colore_rgb;
     question.style.color = colore_rgb;
+    a.style.color = colore_rgb;
+    aa.style.color = colore_rgb;
+    aaa.style.color = colore_rgb;
 }
 
 function display(a){
