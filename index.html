@@ -9,29 +9,42 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
-    <body onload="cambiacolore()" >
+    <body onload="cambiacoloretabella();">
         <center>
-            <table id="tabella" class="centro" style="border: 5px dashed;" bgcolor="#B2B2B2">
+            <table id="tabella" class="centro" style="border: 5px dashed; height: 100%;" bgcolor="#B2B2B2">
                 <tr>
                     <td>
-                        <font color="red"><b>SEI STATO SELEZIONATO TRA PI&Ugrave; DI 1500 UTENTI PER PARTECIPARE AL MIO COMPLEANNO!</b></font><br><br><br>
+                        <center><font color="red">SEI STATO SELEZIONATO TRA PI&Ugrave; DI 1500 UTENTI PER PARTECIPARE AL MIO COMPLEANNO!</font></center>
+                        <br><br><br>
                         <center>
                             <form name="dati">
                                 <input name="b_data" type="button" class="bottone" value="quando?" onclick="display('data');"><br><br>
-                                <input name="data" type="text" class="casella" value="1/2/2018" style="display:none" readonly><br>
-                                <input name="b_luogo" type="button" class="bottone" value="dove?" onclick="display('luogo');"><br><br>
-                                <input name="luogo" type="text" class="casella" value="da inserire" style="display:none" readonly><br>
+                                <p id="data" class="testo" style="display:none">1/2/2018</p>
+                                <input name="b_luogo" type="button" class="bottone" value="dove?" onclick="display('luogo'); display('luogo_img')"><br><br>
+                                <a id="maps" href="https://www.google.it/maps/@38.0281243,12.539754,3a,75y,171.55h,82.86t/data=!3m6!1e1!3m4!1sUD9EYJ1hGhBLbEG8ICubEA!2e0!7i13312!8i6656" target="blank">
+                                    <p id="luogo" class="testo" style="display:none">Civico 24</p>
+                                    <img id="luogo_img" src="locale.jpg" style="display: none" width="400px" height="300">
+                                </a>
+                                <br>
                                 <input name="b_ora" type="button" class="bottone" value="a che ora?" onclick="display('ora');"><br><br>
-                                <input name="ora" type="text" class="casella" value="da inserire" style="display:none" readonly><br>
+                                <p id="ora" class="testo" style="display:none">20:00</p>
                                 <input name="nome" type="text" class="casella" placeholder="nome e cognome"><br><br>
-                                <p>verrai?</p>
+                                <p id="question" class="testo">verrai?</p>
                                 <input type="button" class="bottone" value="si" onclick="email('si')">
                                 <input type="button" class="bottone" value="no" onclick="email('no')">
                             </form>
                         </center>
+                        <br><br>
                     </td>
                 </tr>
             </table>
         </center>
+        <div class="piedipaggina">
+            <center>
+                <pre id="a" class="testo">
+sito by <a id="aa" href="billy.html">billy.exe</a>     cosa ci <a id="aaa" href="organizzazione.html">sarà?</a>
+                </pre>
+            </center>
+        </div>
     </body>
 </html>

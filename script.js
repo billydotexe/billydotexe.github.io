@@ -1,16 +1,24 @@
-setInterval(cambiacolore, 100);
-function cambiacolore(){
+setInterval(cambiacoloretabella, 100);
 
-var r = Math.round(Math.random()*256);
-var g = Math.round(Math.random()*256);
-var b = Math.round(Math.random()*256);
+function cambiacoloretabella(){
 
-colore_rgb = "rgb(" + r + "," + g + ", " + b + ")";
-tabella.style.borderColor = colore_rgb;
+    var r = Math.round(Math.random()*256);
+    var g = Math.round(Math.random()*256);
+    var b = Math.round(Math.random()*256);
+
+    colore_rgb = "rgb(" + r + "," + g + ", " + b + ")";
+    tabella.style.borderColor = colore_rgb;
+    maps.style.color = colore_rgb;
+    data.style.color = colore_rgb;
+    ora.style.color = colore_rgb;
+    question.style.color = colore_rgb;
+    a.style.color = colore_rgb;
+    aa.style.color = colore_rgb;
+    aaa.style.color = colore_rgb;
 }
 
 function display(a){
-    document.forms["dati"][a].style.display = "block";
+    document.getElementById(a).style.display = "block";
 }
 
 function email(r){
