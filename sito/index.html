@@ -9,6 +9,15 @@
 	<body>
 		<div id="header" class="header">
 			<a href="index.html"><img src="images/logo.png" height="65px" width="200px" alt="home page" title="home"></a>
+			<div id="links" class="links">
+				<form action="login.php" method="POST" class="login">
+					<input type="text" name="username" id="input" class="input" placeholder="username"><br>
+					<input type="password" name="password" class="input" placeholder="password"><br>
+					<label for="showpwd">Show password</label>
+					<input type="checkbox" id="showpwd" class="input">
+				</form>
+				<a href="signup.html">sign up</a>
+			</div>
 			<div id="hamburger" class="hamburger" onclick="cambia()">
 				<span></span>
 				<span></span>
@@ -21,10 +30,10 @@
 		<div id="main" class="main">
 		</div>
 		<div id="footer" class="footer">
-			<a href="https://www.facebook.com"><img src="images/social/facebook.png" width="50px" height="50px" alt="facebook" title="facebook"></a>
-			<a href="https://www.instagram.com"><img src="images/social/instagram.png" width="50px" height="50px" alt="instagram" title="instagram"></a>
-			<a href="https://www.twitter.com"><img src="images/social/twitter.png" width="50px" height="50px" alt="twitter" title="twitter"></a>
-			<a href="https://www.reddit.com"><img src="images/social/reddit.png" width="50px" height="50px" alt="reddit" title="reddit"></a>
+			<a href="https://www.facebook.com" target="blank"><img src="images/social/facebook.png" width="50px" height="50px" alt="facebook" title="facebook"></a>
+			<a href="https://www.instagram.com" target="blank"><img src="images/social/instagram.png" width="50px" height="50px" alt="instagram" title="instagram"></a>
+			<a href="https://www.twitter.com" target="blank"><img src="images/social/twitter.png" width="50px" height="50px" alt="twitter" title="twitter"></a>
+			<a href="https://www.reddit.com" target="blank"><img src="images/social/reddit.png" width="50px" height="50px" alt="reddit" title="reddit"></a>
 		</div>
 	</body>
 </html>
