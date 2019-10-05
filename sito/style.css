@@ -26,6 +26,10 @@ body{
     transition: .25s ease-in-out;
 }
 
+.header.open{
+    height: 70%;
+}
+
 .hamburger{
     right: 1%;
     display: inline-block;
