@@ -2,7 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="hamburger.css">
+		<link rel="stylesheet" type="text/css" href="header.css">
+		<link rel="stylesheet" type="text/css" href="navbar.css">
 		<title>qualcosa</title>
 		<script src="script.js"></script>
 	</head>
@@ -10,14 +14,27 @@
 		<div id="header" class="header">
 			<a href="index.html"><img src="images/logo.png" height="65px" width="200px" alt="home page" title="home"></a>
 			<div id="links" class="links">
-				<form action="login.php" method="POST" class="login">
+				
+				<hr class="input"></hr>
+				
+				<form action="login.php" method="POST" class="form">
+					<p class="input">Login</p>
 					<input type="text" name="username" id="input" class="input" placeholder="username"><br>
-					<input type="password" name="password" class="input" placeholder="password"><br>
+					<input type="password" name="password" id="password" class="input" placeholder="password"><br>
 					<label for="showpwd">Show password</label>
-					<input type="checkbox" id="showpwd" class="input">
+					<input type="checkbox" id="showpwd" class="check" onchange="pwd()"><br>
+					<a href="signup.html"><button>sign up</button></a>
 				</form>
-				<a href="signup.html">sign up</a>
+				
+				<hr class="input"></hr>
+
+				<a href="#" class="input">link1</a>
+
+				<hr class="input"></hr>
+
+				<a href="#" class="input">link2</a>
 			</div>
+			
 			<div id="hamburger" class="hamburger" onclick="cambia()">
 				<span></span>
 				<span></span>
@@ -26,9 +43,12 @@
 				<span></span>
 				<span></span>
 			</div>
+
 		</div>
+		
 		<div id="main" class="main">
 		</div>
+		
 		<div id="footer" class="footer">
 			<a href="https://www.facebook.com" target="blank"><img src="images/social/facebook.png" width="50px" height="50px" alt="facebook" title="facebook"></a>
 			<a href="https://www.instagram.com" target="blank"><img src="images/social/instagram.png" width="50px" height="50px" alt="instagram" title="instagram"></a>
