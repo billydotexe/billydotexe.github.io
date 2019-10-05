@@ -18,7 +18,7 @@ body{
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: orange;
+    background-color: #ffc65d;
     overflow: hidden;
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
@@ -30,6 +30,29 @@ body{
     height: 70%;
 }
 
+<<<<<<< HEAD
+.links{
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.links.open{
+    display: inline;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+=======
+>>>>>>> 379bf2f17f785255b8674f1fe0522fd51596636c
 .hamburger{
     right: 1%;
     display: inline-block;
@@ -45,7 +68,7 @@ body{
 }
 
 .hamburger span{
-    background-color: turquoise;
+    background-color: #74fff1;
     display: inline-block;
     position: absolute;
     height: 10px;
@@ -150,7 +173,7 @@ body{
 }
 
 .footer{
-    background-color: turquoise;
+    background-color: #74fff1;
     position: fixed;
     display: flex;
     justify-content: space-around;
