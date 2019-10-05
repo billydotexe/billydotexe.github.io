@@ -30,7 +30,6 @@ body{
     height: 70%;
 }
 
-<<<<<<< HEAD
 .links{
     position: fixed;
     top: 70px;
@@ -51,8 +50,6 @@ body{
     transition: .25s ease-in-out;
 }
 
-=======
->>>>>>> 379bf2f17f785255b8674f1fe0522fd51596636c
 .hamburger{
     right: 1%;
     display: inline-block;
