@@ -1,0 +1,33 @@
+.form{
+    padding: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #74fff1;
+    align-content: center;
+    text-align: right;
+}
+
+hr.input{
+    margin-left: 50%;
+    width: 50%;
+    color: #74fff1;
+    border: 2px solid#74fff1;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transform: translate(-50%);
+    border-radius: 5px;
+}
+
+p.input{
+    text-align: left;
+    margin-bottom: 3px;
+}
+
+a.input{
+    margin-left: 50%;
+    color: black;
+    text-decoration: none;
+    display: block;
+    transform: translate(-20%);
+}
