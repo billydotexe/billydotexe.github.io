@@ -13,10 +13,14 @@ hr.input{
     color: #74fff1;
     border: 2px solid#74fff1;
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     transform: translate(-50%);
     border-radius: 5px;
+}
+
+hr.input:nth-child(1){
+    margin-top: 20%;
 }
 
 p.input{
