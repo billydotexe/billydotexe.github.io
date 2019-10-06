@@ -19,10 +19,6 @@ hr.input{
     border-radius: 5px;
 }
 
-hr.input:nth-child(1){
-    margin-top: 20%;
-}
-
 p.input{
     text-align: left;
     margin-bottom: 3px;
